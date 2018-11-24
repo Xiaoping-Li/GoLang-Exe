@@ -1,0 +1,25 @@
+/*
+Given a person's name and age, "checkAge" returns one of two messages:
+
+"Go home, {insert_name_here}!", if they are younger than 21."Welcome, {insert_name_here}!", if they are 21 or older.
+
+*/
+
+
+package main
+
+import "fmt"
+
+func main() {
+  var name string = "leela"
+  var age int = 20
+  getProperty(name, age)
+}
+
+func getProperty(name string, age int) {
+  if age >= 21 {
+    fmt.Printf("Welcome, %v!\n", name)
+  } else {
+    fmt.Printf("Go home, %v!\n", name)
+  }
+}
